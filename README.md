@@ -1,4 +1,6 @@
 # ratpack-error
+[![Build Status](https://travis-ci.org/gregwhitaker/ratpack-error.svg?branch=master)](https://travis-ci.org/gregwhitaker/ratpack-error)
+
 A [Ratpack](http://www.ratpack.io) module that provides a consistent and easy-to-use error handling framework for restful web services.
     
 ## Getting Started
