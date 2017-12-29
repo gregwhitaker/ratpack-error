@@ -129,8 +129,7 @@ public class DefaultErrorHandler implements ErrorHandler {
         private String errorDetail;
         private String errorDetailUrl;
         private String stacktrace;
-
-
+        
         ErrorResponse(int status, String errorMessage) {
             this.id = UUID.randomUUID().toString();
             this.status = status;
