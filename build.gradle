@@ -1,3 +1,13 @@
+buildscript {
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        classpath('com.jfrog.bintray.gradle:gradle-bintray-plugin:1.7')
+    }
+}
+
 plugins {
     id 'com.gradle.build-scan' version '1.11'
     id 'java'
@@ -10,9 +20,14 @@ buildScan {
 }
 
 sourceCompatibility = 1.8
+ext.artifact = 'ratpack-error'
+
+apply from: 'gradle/release.gradle'
+apply from: 'gradle/convention.gradle'
 
 repositories {
     jcenter()
+    mavenCentral()
 }
 
 dependencies {
