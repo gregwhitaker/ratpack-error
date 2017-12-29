@@ -2,9 +2,9 @@
 A [Ratpack](http://www.ratpack.io) module that provides a consistent and easy-to-use error handling framework for restful web services.
     
 ## Getting Started
-The library is available on JCenter.
+The ratpack-error module is available via [JCenter]().
 
-## Building
+## Building From Source
 The module can built using the following Gradle command:
 
     $ ./gradlew clean build
