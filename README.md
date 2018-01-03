@@ -3,7 +3,7 @@
 
 A [Ratpack](http://www.ratpack.io) module that provides a consistent and easy-to-use error handling framework for restful web services.
 
-The ratpack-error module provides you with a set of base exception classes that you extend which give you beautiful, user-friendly, error messages like these:
+The ratpack-error module provides a set of base exception classes that when extended give you beautiful, user-friendly, error messages like the following:
 
 * Error Message Example
 
