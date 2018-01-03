@@ -2,7 +2,35 @@
 [![Build Status](https://travis-ci.org/gregwhitaker/ratpack-error.svg?branch=master)](https://travis-ci.org/gregwhitaker/ratpack-error)
 
 A [Ratpack](http://www.ratpack.io) module that provides a consistent and easy-to-use error handling framework for restful web services.
+
+The ratpack-error module provides you with a set of base exception classes that you extend which give you beautiful, user-friendly, error messages like these:
+
+* Error Message Example
+
+        {
+            "status": "404",
+            "errorCode": "123ABC",
+            "errorMessage": "Not Found",
+            "errorDetail": "Foo widget with id '123' was not found",
+            "errorDetailUrl": "https://docs.test.com/errors/123abc"
+        }
+        
+ * Field Level Error Message Example
     
+         {
+            "status": "400",
+            "errorCode": "321ABC",
+            "errorMessage": "Bad Request",
+            "errorDetail": "Invalid query parameters",
+            "fieldErrors": [
+                {
+                    "field": "numPages",
+                    "errorCode": "321ABC-456",
+                    "errorMessage": "Parameter 'numPages' must be an integer."
+                }
+            ]
+        }
+        
 ## Getting Started
 The ratpack-error module is available via [JCenter](https://bintray.com/gregwhitaker/maven/ratpack-error).
 
