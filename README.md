@@ -8,7 +8,7 @@ The ratpack-error module provides a set of base exception classes that when exte
 * Error Message Example
 
         {
-            "status": "404",
+            "status": 404,
             "errorCode": "123ABC",
             "errorMessage": "Not Found",
             "errorDetail": "Foo widget with id '123' was not found",
@@ -18,7 +18,7 @@ The ratpack-error module provides a set of base exception classes that when exte
  * Field Level Error Message Example
     
          {
-            "status": "400",
+            "status": 400,
             "errorCode": "321ABC",
             "errorMessage": "Bad Request",
             "errorDetail": "Invalid query parameters",
